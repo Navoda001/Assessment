@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# Landing Page Project - Intern Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + Vite + Tailwind CSS landing page built as part of an intern assignment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Components Built
 
-## Expanding the ESLint configuration
+- **Header** – Top navigation bar.  
+- **HeroSection / HeroSection2 / HeroSection3** – Hero sections with headings, subheadings, and buttons.  
+- **ProgramSection** – Cards showing different programs (SSW Type 1, Type 2, JFT, JFT N4).  
+- **EnrollmentSteps** – Step-by-step enrollment guide (Step 1–4).  
+- **InstructionMethods** – Instruction methods section (Shadowing, Question List, etc.).  
+- **NewsBanner** – Banner for announcements and calls-to-action.  
+- **ContactSection** – Contact form and info.  
+- **FooterSection** – Footer with links and branding.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tailwind Theme Changes
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Colors:** Extended with  colors, primary, secondary, neutral, accent, destructive, and sidebar palettes.  
+- **Fonts:** Set global font `'Lato', sans-serif` with customized heading and paragraph sizes.  
+- **Responsive Breakpoints:** Defined mobile-first breakpoints matching Figma design.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Notes
+
+- Components are reusable and responsive.  
+- Framer Motion used for fade-up animations.  
+- Placeholder images/icons are included.  
