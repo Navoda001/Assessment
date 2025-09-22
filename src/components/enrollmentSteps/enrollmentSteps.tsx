@@ -120,7 +120,7 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
                                             </div>
 
                                             <div className="space-y-2 px-2">
-                                                <h3 className="text-sm font-semibold text-neutral2 leading-tight">
+                                                <h3 className="text-sm font-semibold text-primary1 leading-tight">
                                                     {step.title}
                                                 </h3>
                                                 <p className="text-xs text-gray-600 leading-relaxed">
