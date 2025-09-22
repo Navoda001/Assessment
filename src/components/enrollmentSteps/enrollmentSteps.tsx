@@ -15,26 +15,26 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
     const steps: Step[] = [
         {
             id: 1,
-            title: 'Learn Japanese & Pass JFT',
-            description: 'Japanese language training (6 months at Lanka Landy). Pass JFT (N4 level exam)',
+            title: 'Learn',
+            description: 'Learn Japanese in Lanka  Landy (6 months, 1 day a  week or more)',
             isActive: true
         },
         {
             id: 2,
-            title: 'Skills Training & Exams',
-            description: 'Vocational skills training (1 month). Pass vocational skills test Interview practice & Japanese etiquette',
+            title: 'Passed JFT',
+            description: 'Learn Japanese in Lanka  Landy (6 months, 1 day a  week or more)',
             isActive: false
         },
         {
             id: 3,
-            title: 'Interviews & Contract Signing',
-            description: 'Sign contract with host company. Health check & residence permit certificate',
+            title: 'Skill Education',
+            description: 'Learn Japanese in Lanka  Landy (6 months, 1 day a  week or more)',
             isActive: true
         },
         {
             id: 4,
-            title: 'Visa, Health Check & Departure',
-            description: 'Visa approval & Bureau registration. Pre-departure guidance Fly to Japan',
+            title: 'Skill Test Passed',
+            description: 'Learn Japanese in Lanka  Landy (6 months, 1 day a  week or more)',
             isActive: false
         }
     ];

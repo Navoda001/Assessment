@@ -68,28 +68,28 @@ const ProgramSection: React.FC = () => {
         {
             id: 'ssw-type-1',
             title: 'SSW TYPE 1',
-            description: 'For workers in 14 specific industries in SSW. We are here to guide you across 4 key industries...',
+            description: 'For workers in 16 specific industries in SSW. We are here to guide you across 6 key industries...',
             backgroundImage: './programcard4.png',
             hasReadMore: true
         },
         {
             id: 'ssw-type-2',
             title: 'SSW TYPE 2',
-            description: 'For workers in 14 specific industries in SSW. We are here to guide you across 4 key industries...',
+            description: 'For workers in 16 specific industries in SSW. We are here to guide you across 6 key industries...',
             backgroundImage: './programcard1.png',
             hasReadMore: true
         },
         {
             id: 'jft',
             title: 'JFT',
-            description: 'For workers in 14 specific industries in SSW. We are here to guide you across 6 key industries...',
+            description: 'For workers in 16 specific industries in SSW. We are here to guide you across 6 key industries...',
             backgroundImage: './programcard2.png',
             hasReadMore: true
         },
         {
             id: 'jft-n4',
             title: 'JFT N4',
-            description: 'For workers in 14 specific industries in SSW. We are here to guide you across 4 key industries...',
+            description: 'For workers in 16 specific industries in SSW. We are here to guide you across 6 key industries...',
             backgroundImage: './programcard3.png',
             hasReadMore: true
         }

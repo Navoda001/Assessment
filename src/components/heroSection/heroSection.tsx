@@ -70,7 +70,7 @@ const HeroSection: React.FC = () => {
                                 <div className="max-w-full sm:max-w-4xl text-white">
                                     {/* Welcome Text */}
                                     <p className="text-xl sm:text-xl md:text-[36px] lg:text-[36px] xl:text-[36px] font-medium opacity-90 leading-tight">
-                                        <span className="flex flex-col space-y-2 sm:space-y-3 md:space-y-4">
+                                        <span className="flex flex-col space-y-2 sm:space-y-3 md:space-y-4 uppercase">
                                             {slide.title.split(',').map((line, index) => (
                                                 <span key={index}>{line.trim()}</span>
                                             ))}
@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
                                         {slide.mainHeading.split(',').map((line, index, arr) => (
                                             <div
                                                 key={index}
-                                                className={`leading-none sm:leading-tight ${index !== arr.length - 1 ? 'mb-4 sm:mb-6 md:mb-0' : ''}`}
+                                                className={`leading-none sm:leading-tight uppercase ${index !== arr.length - 1 ? 'mb-4 sm:mb-6 md:mb-0' : ''}`}
                                             >
                                                 {line.trim()}
                                             </div>
