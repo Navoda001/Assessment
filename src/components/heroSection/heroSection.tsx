@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Slide {
@@ -39,6 +39,15 @@ const HeroSection: React.FC = () => {
     const prevSlide = () => {
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
     };
+
+    // Auto-play functionality
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className='flex flex-col'>
