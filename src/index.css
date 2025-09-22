@@ -285,44 +285,68 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --font-family: 'Lato', sans-serif;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: var(--font-family);
   }
-
   body {
     @apply bg-background text-foreground;
   }
 
-  /* Typography base styles */
+  /* Typography base styles - Display 1 Bold as default for h1, etc. */
   h1 {
-    @apply text-4xl leading-tight font-bold;
+    @apply text-[75px] leading-tight font-bold;
   }
-
   h2 {
-    @apply text-3xl leading-tight font-semibold;
+    @apply text-[36px] leading-tight font-bold;
   }
-
   h3 {
-    @apply text-2xl leading-snug font-semibold;
+    @apply text-[32px] leading-snug font-bold;
   }
-
   h4 {
-    @apply text-xl leading-snug font-medium;
+    @apply text-[24px] leading-snug font-bold;
   }
-
   h5 {
-    @apply text-lg leading-normal font-medium;
+    @apply text-[22px] leading-normal font-bold;
   }
-
   h6 {
-    @apply text-base leading-normal font-medium;
+    @apply text-[20px] leading-normal font-bold;
   }
 
   p {
-    @apply text-base leading-relaxed;
+    @apply text-base leading-relaxed font-normal;
+  }
+
+  /* Variants for SemiBold (600), Medium (500), Regular (400) */
+  .heading-semibold h1,
+  .heading-semibold h2,
+  .heading-semibold h3,
+  .heading-semibold h4,
+  .heading-semibold h5,
+  .heading-semibold h6 {
+    @apply font-semibold;
+  }
+
+  .heading-medium h1,
+  .heading-medium h2,
+  .heading-medium h3,
+  .heading-medium h4,
+  .heading-medium h5,
+  .heading-medium h6 {
+    @apply font-medium;
+  }
+
+  .heading-regular h1,
+  .heading-regular h2,
+  .heading-regular h3,
+  .heading-regular h4,
+  .heading-regular h5,
+  .heading-regular h6 {
+    @apply font-normal;
   }
 
   /* Focus styles */
