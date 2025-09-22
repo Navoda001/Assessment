@@ -14,6 +14,7 @@ This project is a React + Vite + Tailwind CSS landing page built as part of an i
 - **NewsBanner** – Banner for announcements and calls-to-action.  
 - **ContactSection** – Contact form and info.  
 - **FooterSection** – Footer with links and branding.
+- **RegisterSection** – Registration Form
 
 ---
 
