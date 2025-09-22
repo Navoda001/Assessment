@@ -137,7 +137,7 @@ const ProgramSection: React.FC = () => {
 
 
     return (
-        <div className="min-h-screen bg-gray-100 py-12 px-4 md:px-6 lg:px-8">
+        <div className="py-12 bg-gray-100 py-12 px-4 md:px-6 lg:px-8">
             {/* Header with airplane logo */}
             <div className="max-w-6xl mx-auto mb-12">
                 <div className="text-center mb-8">

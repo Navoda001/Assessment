@@ -24,14 +24,14 @@ const HeroSection2: React.FC = () => {
     };
 
     return (
-        <div className="relative min-h-screen w-full overflow-hidden">
+        <div className="relative py-12 w-full overflow-hidden">
             {/* Background Image */}
             <div 
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${section.backgroundImage})` }}
             /> 
             
-            <div className="relative z-10 flex items-center min-h-screen ">
+            <div className="relative z-10 flex items-center  ">
                 {/* Container for the layout */}
                 <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center">

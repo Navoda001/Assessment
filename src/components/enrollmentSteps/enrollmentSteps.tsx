@@ -43,8 +43,10 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
         console.log('More info clicked');
     };
 
+    const mobileSteps = [steps[0], steps[1], steps[3], steps[2]];
+
     return (
-        <div className={`bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen py-8 md:py-16 px-4 ${className}`}>
+        <div className={`bg-gradient-to-br from-gray-50 to-gray-100 py-8 md:py-16 px-4 ${className}`}>
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-16">
@@ -107,7 +109,7 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
                             </div>
 
                             <div className="grid grid-cols-2 gap-8">
-                                {steps.map((step,) => (
+                                {mobileSteps.map((step,) => (
                                     <div key={step.id} className="relative">
                                         <div className="flex flex-col items-center text-center">
                                             <div
