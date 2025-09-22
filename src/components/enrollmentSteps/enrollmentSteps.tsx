@@ -49,10 +49,15 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
                 {/* Header */}
                 <div className="text-center mb-8 md:mb-16">
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">ENROLLMENT</h1>
-                    <div className="w-16 h-0.5 bg-orange-500 mx-auto mb-6"></div>
                     <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto px-4">
                         Simple, practical methods to build real Japanese communication skills.
                     </p>
+                    {/* Decorative divider */}
+                    <div className="flex items-center justify-center mt-4">
+                        <div className="h-0.5 bg-primary4 w-10"></div>
+                        <div className="w-4 h-4 rounded-full border-2 border-primary4 bg-white"></div>
+                        <div className="h-0.5 bg-primary4 w-10"></div>
+                    </div>
                 </div>
 
                 {/* Steps Container Desktop View*/}
@@ -66,8 +71,8 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
                                     <div className="flex flex-col items-center text-center">
                                         <div
                                             className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-6 relative z-10 transition-all duration-300 hover:scale-110 ${step.isActive
-                                                    ? 'bg-primary4 shadow-lg'
-                                                    : 'bg-primary2 shadow-md'
+                                                ? 'bg-primary4 shadow-lg'
+                                                : 'bg-primary2 shadow-md'
                                                 }`}
                                         >
                                             {step.id}
@@ -107,8 +112,8 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ className = '' }) => 
                                         <div className="flex flex-col items-center text-center">
                                             <div
                                                 className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4 relative z-10 transition-all duration-300 ${step.isActive
-                                                        ? 'bg-primary4 shadow-lg'
-                                                        : 'bg-primary2 shadow-md'
+                                                    ? 'bg-primary4 shadow-lg'
+                                                    : 'bg-primary2 shadow-md'
                                                     }`}
                                             >
                                                 {step.id}
