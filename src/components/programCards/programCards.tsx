@@ -149,7 +149,12 @@ const ProgramSection: React.FC = () => {
                         Simple, practical methods to build real Japanese communication skills.
                     </p>
 
-                    <div className="w-16 h-0.5 bg-orange-400 mx-auto mt-4"></div>
+                    {/* Decorative divider */}
+                    <div className="flex items-center justify-center mt-4">
+                        <div className="h-0.5 bg-primary4 w-10"></div>
+                        <div className="w-4 h-4 rounded-full border-2 border-primary4 bg-white"></div>
+                        <div className="h-0.5 bg-primary4 w-10"></div>
+                    </div>
                 </div>
 
                 <div className="hidden md:flex md:justify-center md:gap-6 mb-8 overflow-x-visible">
