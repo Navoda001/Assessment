@@ -4,6 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import ReactCountryFlag from "react-country-flag";
 import { FiPhoneCall } from 'react-icons/fi';
 import { LuSearch } from 'react-icons/lu';
+import RegisterComponent from '../register/register';
 
 // Types
 interface ContactInfoProps {
@@ -95,6 +96,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen,
 const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [registerMenuOpen, setRegisterMenuOpen] = useState(false);
 
   const toggleMobileMenu = (): void => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -149,6 +151,10 @@ const Header: React.FC = () => {
     { name: 'News', href: '#' }
   ];
 
+  const handleRegisterClick = () => {
+    setRegisterMenuOpen(true);
+  };
+
   return (
     <div className="w-full">
       {/* Top Bar */}
@@ -180,7 +186,7 @@ const Header: React.FC = () => {
                 <span className='rounded-full bg-white/20 border border-white/30 p-2 hover:bg-white/30'>
                   <User size={15} />
                 </span>
-                <span>Register</span>
+                <span onClick={handleRegisterClick}>Register</span>
               </a>
             </div>
           </div>
@@ -269,6 +275,21 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
+
+      {registerMenuOpen && (
+        <div
+          className="fixed inset-0 z-50 flex justify-center items-center bg-black/50 overflow-auto"
+          onClick={() => setRegisterMenuOpen(false)}
+        >
+          <div
+            className="bg-white rounded-lg w-full max-w-lg max-h-[96vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <RegisterComponent />
+          </div>
+        </div>
+      )}
+      
     </div>
   );
 };
